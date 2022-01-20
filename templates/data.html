@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% if data|length == 0 %}
+                   
+    <div class="alert alert-dark" role="alert">
+        No data found. Add your first data now!
+      </div>
+    {% else %} 
+    {% for alldata in data %}
+    
+      <h1>{{loop.index}}</h1>
+      <h1>{{alldata.username}}</h1>
+    {% endfor %}
+    {% endif %}
+</body>
+</html>
