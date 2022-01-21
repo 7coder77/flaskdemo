@@ -32,6 +32,8 @@ def handlingform():
 def abc():
     q=User.query.all()#query to display data syntax => class.query.all() or class.query.filter_by(colname=data).first()
     return render_template("data.html",data=q)
+##hello this change is from 7coder77
+#plz show this in anij
 
 
 if __name__=="__main__":
